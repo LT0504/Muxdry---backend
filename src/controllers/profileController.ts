@@ -6,7 +6,6 @@ import { hashPassword } from "../services/password.service";
 export const getProfile = async (req: Request, res: Response): Promise<void> => {
     const user = (req as Request & { user: DecodedToken }).user;
     const userId = user.id;
-    const userRol = user.rol
     console.log(user.rol)
 
     try {

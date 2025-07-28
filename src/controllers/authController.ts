@@ -77,7 +77,7 @@ export const login = async (req: Request, res: Response): Promise<void> => {
         }
 
         const token = generateToken(user)
-        res.status(200).json({ message: 'Usuario logeado exitosamente', token: token, user:user})
+        res.status(200).json({ message: 'Usuario logeado exitosamente', token: token, user: { id: user.id, name: user.name, email: user.email, rol: user.rol }})
     } catch (error) {
         console.log(error)
         res.status(500).json({ message: 'Hubo un error, pruebe mas tarde' })
