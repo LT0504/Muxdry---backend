@@ -1,32 +1,5 @@
 node_modules
-# Keep environment variables out of version control
 .env
-
-# Build
 dist/
 build/
-
-# Prisma
-prisma/dev.db
-prisma/dev.db-journal
-
-# PostgreSQL local data (si usas Docker)
 postgres/
-
-# Logs
-logs/
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# TypeScript
-*.tsbuildinfo
-
-# IDE config
-.vscode/
-.idea/
-
-# OS files
-.DS_Store
-Thumbs.db

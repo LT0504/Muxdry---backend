@@ -6,8 +6,6 @@ import { hashPassword } from "../services/password.service";
 export const getProfile = async (req: Request, res: Response): Promise<void> => {
     const user = (req as Request & { user: DecodedToken }).user;
     const userId = user.id;
-    console.log(user.rol)
-
     try {
         const user = await prisma.findUnique({
             where: {
