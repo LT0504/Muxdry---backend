@@ -106,7 +106,7 @@ services:
 ```
 ---
 
-## 🌐 Variables de entorno
+## 🌐 Variables de entorno (ejemplo)
 
 Crea un archivo `.env` con:
 
